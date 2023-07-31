@@ -1,0 +1,69 @@
+.img-logo {
+    max-width: 6rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer {
+    height: 2rem;
+    margin: .3rem;
+}
+
+nav {
+    margin: .3rem;
+}
+
+.nav-item {
+    margin: 0 3rem;
+}
+
+.title {
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.txt-btn {
+    font-size: small;
+}
+
+.btn-acoes {
+    width: 10rem;
+}
+
+.btn-modal {
+    width: 12rem;
+}
+
+@media (max-width: 600px)
+{
+  .table-email
+   {
+    display: none;
+   }
+}
+
+@media (max-width: 768px)
+{
+    #date-lg {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px)
+{
+    #date-sm {
+        display: none;
+    }
+
+}

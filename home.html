@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Lista de clientes</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class="container">
+        <section id="top" class="d-flex justify-content-between">
+            <figure class="m-2">
+                <img src="./img/logo.png" alt="LOGO" class="img-logo">
+            </figure>
+            <form action="" class="d-flex align-items-center">
+                <div class="input-group flex-nowrap m-2 div-search">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                        aria-describedby="addon-wrapping" name="txt-search" id="txt-search">
+                    <span class="input-group-text" id="addon-wrapping"><i class="bi bi-search"></i></span>
+                </div>
+            </form>
+        </section>
+        <section class="container" id="navigation">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu 1</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu 2</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu 3</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Menu 4</a>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </section>
+    </header>
+    <main class="container">
+
+        <section class="row title">
+            <div class="col-3"></div>
+            <div class="col-6 text-center">
+                <h1 class="fs-2">Cadastro de Clientes</h1>
+            </div>
+            <div class="col-3 d-flex align-items-center justify-content-center">
+                <a class="btn btn-primary" href="editar.html">Adicionar <i class="bi bi-plus-circle"></i></a>
+            </div>
+        </section>
+
+        <section class="row mb-3 mt-1">
+
+            <table class="table table-responsive table-striped table-hover table-bordered text-center">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Data Nascimento</th>
+                        <th class="table-email">Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td>1</td>
+                        <td>Carlao</td>
+                        <td>18/06/1984</td>
+                        <td class="table-email">test@email.com</td>
+                        <td>
+                            <div class="row btn-acoes mx-auto">
+                                <div class="col-6 px-0">
+                                    <a type="button" class="btn" href="editar.html">
+                                        <div class="row">
+                                            <i class="bi bi-pencil px-0"></i>
+                                        </div>
+                                        <div class="row">
+                                            <span class="txt-btn px-0">Editar</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#excluirModal">
+                                        <div class="row">
+                                            <i class="bi bi-trash3 px-0"></i>
+                                        </div>
+                                        <div class="row">
+                                            <span class="txt-btn px-0">Excluir</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td>2</td>
+                        <td>Elisabete</td>
+                        <td>20/12/2000</td>
+                        <td class="table-email">bete@gmail.com</td>
+                        <td>
+                            <div class="row btn-acoes mx-auto">
+                                <div class="col-6 px-0">
+                                    <a type="button" class="btn" href="editar.html">
+                                        <div class="row">
+                                            <i class="bi bi-pencil px-0"></i>
+                                        </div>
+                                        <div class="row">
+                                            <span class="txt-btn px-0">Editar</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#excluirModal">
+                                        <div class="row">
+                                            <i class="bi bi-trash3 px-0"></i>
+                                        </div>
+                                        <div class="row">
+                                            <span class="txt-btn px-0">Excluir</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="">
+                        <td>3</td>
+                        <td>Julia</td>
+                        <td>13/12/2020</td>
+                        <td class="table-email">juju.docinho@hotmail.com</td>
+                        <td>
+                            <div class="row btn-acoes mx-auto">
+                                <div class="col-6 px-0">
+                                    <a type="button" class="btn" href="editar.html">
+                                        <div class="row">
+                                            <i class="bi bi-pencil px-0"></i>
+                                        </div>
+                                        <div class="row">
+                                            <span class="txt-btn px-0">Editar</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-6 px-0">
+                                    <button type="button" class="btn" data-bs-toggle="modal"
+                                        data-bs-target="#excluirModal">
+                                        <div class="row">
+                                            <i class="bi bi-trash3 px-0"></i>
+                                        </div>
+                                        <div class="row">
+                                            <span class="txt-btn px-0">Excluir</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="modal fade" id="excluirModal" tabindex="-1" aria-labelledby="excluirModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="excluirModalLabel">Excluir cliente</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Deseja realmente apagar o Cliente?
+                        </div>
+                        <div class="row mx-auto mb-3 mt-1">
+                            <div class="col-6">
+                                <button type="button" class="btn btn-primary btn-modal"
+                                    data-bs-dismiss="modal">Não</button>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-danger btn-modal"
+                                    data-bs-dismiss="modal">Sim</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer class="sticky-bottom bg-white">
+        <p class="text-center">Developed by Thales Fossalussa 2023</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
